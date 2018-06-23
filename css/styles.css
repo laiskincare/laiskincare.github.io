@@ -1,8 +1,189 @@
-.logo img {
-    padding: 2em;
+html {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+.btn-default {
+  border: 1px solid #007bff;
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: white;
+  border: 1px solid #007bff;
+  outline: none;
+  background-color: #007bff;
+}
+
+/*
+----------
+Navigation
+----------
+*/
+#mainNav {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+}
+
+#mainNav a {
+  color: white;
+}
+
+/*
+--------
+Masthead
+--------
+*/
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: #333333;
+  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.masthead .intro-img {
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .masthead {
+    height: 120%;
+    padding: 0;
+  }
+  .masthead .intro-img {
+    width: 200px;
+  }
+}
+
+.btn-chevrons {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #333333;
+  background: transparent;
+}
+
+/*
+-----
+About
+-----
+*/
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+/*
+----------
+Who we are
+----------
+*/
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member > h4 {
+  margin-bottom: 10px;
+}
+
+/*
+------------
+Our Products
+------------
+*/
+.product-divider {
+    margin: 5rem 0;
+}
+
+.product-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+
+.product-image {
+    width: 400px;
+}
+
+/*
+-------
+Contact
+-------
+*/
+#contact .address-line {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  #contact .address {
+    margin-bottom: 10px;
+  }
+  #contact .phone {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+  #contact .hours {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
 }
