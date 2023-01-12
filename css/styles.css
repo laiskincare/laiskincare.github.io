@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 100%;
   color: #333333;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -186,4 +187,37 @@ Contact
     margin-top: 35px;
     margin-bottom: 10px;
   }
+}
+
+/*
+--------
+Services
+--------
+*/
+#services {
+  background: url("../img/background.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-color: white;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.table {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #ac852e;
+  border-collapse: separate;
+  padding: 15px;
+}
+
+.table thead > tr > th {
+  border-bottom: 2px solid #ac852e;
+  color: #206d5b;
+  font-size: 20px;
+}
+
+td {
+  overflow: hidden;
+  white-space: nowrap;
 }
