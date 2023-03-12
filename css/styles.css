@@ -49,10 +49,18 @@ p {
   background-color: #007bff;
 }
 
+.lsc-heading {
+  border-bottom: 2px solid #ac852e;
+  color: #206d5b;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  line-height: 1.5;
+}
+
 /*
-----------
+-------------------------------------------------------------------------------
 Navigation
-----------
+-------------------------------------------------------------------------------
 */
 #mainNav {
   margin-bottom: 0;
@@ -72,23 +80,28 @@ Navigation
 }
 
 /*
---------
+-------------------------------------------------------------------------------
 Masthead
---------
+-------------------------------------------------------------------------------
 */
-.masthead {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 200px 0;
-  text-align: center;
+.btn-chevrons {
   color: #333333;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: black;
+  font-size: 26px;
+  height: 55px;
+  line-height: 45px;
+  width: 55px;
+}
+
+.masthead {
+  background: url("../img/background.jpg") no-repeat center;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  display: table;
+  height: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .masthead .intro-body {
@@ -97,47 +110,21 @@ Masthead
 }
 
 .masthead .intro-img {
-  width: 500px;
   margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-  .masthead {
-    height: 120%;
-    padding: 0;
-  }
-  .masthead .intro-img {
-    width: 200px;
-  }
-}
-
-.btn-chevrons {
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
-  line-height: 45px;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-  color: #333333;
-  background: transparent;
+  padding-top: 57px;
+  width: 100%;
 }
 
 /*
------
+-------------------------------------------------------------------------------
 About
------
+-------------------------------------------------------------------------------
 */
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
-/*
-----------
-Who we are
-----------
-*/
 .team-member {
   margin-bottom: 50px;
   text-align: center;
@@ -147,54 +134,22 @@ Who we are
   margin-bottom: 10px;
 }
 
-/*
-------------
-Our Products
-------------
-*/
-.product-divider {
-    margin: 5rem 0;
-}
-
-.product-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -0.05rem;
-}
-
-.product-image {
-    width: 400px;
-}
 
 /*
--------
+-------------------------------------------------------------------------------
 Contact
--------
+-------------------------------------------------------------------------------
 */
-#contact .address-line {
-  margin-bottom: 0px;
-}
-
-@media (max-width: 768px) {
-  #contact .address {
-    margin-bottom: 10px;
-  }
-  #contact .phone {
-    margin-top: 35px;
-    margin-bottom: 10px;
-  }
-  #contact .hours {
-    margin-top: 35px;
-    margin-bottom: 10px;
-  }
+#contact img {
+  width: 30px;
 }
 
 /*
---------
-Services
---------
+-------------------------------------------------------------------------------
+Services and Our Products
+-------------------------------------------------------------------------------
 */
-#services {
+#services, #products {
   background: url("../img/background.jpg") no-repeat center;
   background-attachment: fixed;
   background-color: white;
@@ -204,9 +159,20 @@ Services
   -o-background-size: cover;
 }
 
+#products > .container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0px solid #ac852e;
+  border-collapse: separate;
+  padding: 50px; 
+}
+
+.product-divider {
+  margin: 5rem 0;
+}
+
 .table {
   background-color: rgba(255, 255, 255, 0.7);
-  border: 2px solid #ac852e;
+  border: 0px solid #ac852e;
   border-collapse: separate;
   padding: 15px;
 }
